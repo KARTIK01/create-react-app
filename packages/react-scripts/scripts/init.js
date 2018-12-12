@@ -164,7 +164,19 @@ module.exports = function(
     command = 'npm';
     args = ['install', '--save', verbose && '--verbose'].filter(e => e);
   }
-  args.push('react', 'react-dom');
+  args.push(
+    'react',
+    'react-dom',
+    'react-redux',
+    'redux-thunk',
+    'redux',
+    'redux-logger',
+    'redux-devtools-extension',
+    'redux-immutable-state-invariant',
+    'raven-js',
+    '@reach/router',
+    '@kartikag01/antd'
+  );
 
   // Install additional template dependencies, if present
   const templateDependenciesPath = path.join(
